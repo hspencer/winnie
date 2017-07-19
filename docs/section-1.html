@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Winnie</title>
+    <meta name="keywords" content="bootstrap alternative, css framework, styleguide, pattern library">
+    <meta name="description" content="A sassy, opinionated CSS Framework. A tiny alternative to Bootstrap.">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="apple-touch-fullscreen" content="yes">
+
+    
+  <link href="../dist/css/winnie.css" rel="stylesheet" />
+  <link href="./public/css/kss.css" rel="stylesheet" />
+
+  </head>
+  <body class="language-markup">
+
+      <header>
+  <h3>
+    <a href="javascript:;" class="js-grid-toggle grid-toggle fs-base f-right">Grid</a>
+    <a href="./index.html">Winnie</a>
+  </h3>
+</header>
+
+
+      
+
+
+<nav>
+  <ul>
+      <li>
+        <a class='underline' href="section-1.html">Paragraphs</a>
+      </li>
+      <li>
+        <a class='underline' href="section-2.html">Grid</a>
+      </li>
+      <li>
+        <a class='underline' href="section-3.html">Buttons</a>
+      </li>
+      <li>
+        <a class='underline' href="section-4.html">Forms</a>
+      </li>
+      <li>
+        <a class='underline' href="section-5.html">Utilities</a>
+      </li>
+  </ul>
+</nav>
+
+
+<div class="wrapper">
+
+      <article class="pattern">
+          <h2 id="1">Paragraphs</h2>
+          <section class="example">
+<pre class="">&lt;p class=&quot;[modifier class]&quot; &gt;
+  What I need is to rent a room for our party. I am &lt;a class=&#x27;underline&#x27; href=&#x27;#&#x27;&gt;happy&lt;/a&gt; to take your donation; any amount will be greatly appreciated.
+  I was very proud of my nickname throughout high school but today- I couldn’t be any different to what my nickname was.
+&lt;/p&gt;</pre>
+            <div class="kss-example"><p class="[modifier class]" >
+  What I need is to rent a room for our party. I am <a class='underline' href='#'>happy</a> to take your donation; any amount will be greatly appreciated.
+  I was very proud of my nickname throughout high school but today- I couldn’t be any different to what my nickname was.
+</p></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.block</code> <span class="f-right fs-small">this is a block paragraph</span></p>
+              <div class="kss-example"><p class="block" >
+  What I need is to rent a room for our party. I am <a class='underline' href='#'>happy</a> to take your donation; any amount will be greatly appreciated.
+  I was very proud of my nickname throughout high school but today- I couldn’t be any different to what my nickname was.
+</p></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.bold</code> <span class="f-right fs-small">a bold paragraph</span></p>
+              <div class="kss-example"><p class="bold" >
+  What I need is to rent a room for our party. I am <a class='underline' href='#'>happy</a> to take your donation; any amount will be greatly appreciated.
+  I was very proud of my nickname throughout high school but today- I couldn’t be any different to what my nickname was.
+</p></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.extra-bold</code> <span class="f-right fs-small">a extra bold paragraph</span></p>
+              <div class="kss-example"><p class="extra-bold" >
+  What I need is to rent a room for our party. I am <a class='underline' href='#'>happy</a> to take your donation; any amount will be greatly appreciated.
+  I was very proud of my nickname throughout high school but today- I couldn’t be any different to what my nickname was.
+</p></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.black</code> <span class="f-right fs-small">a black paragraph</span></p>
+              <div class="kss-example"><p class="black" >
+  What I need is to rent a room for our party. I am <a class='underline' href='#'>happy</a> to take your donation; any amount will be greatly appreciated.
+  I was very proud of my nickname throughout high school but today- I couldn’t be any different to what my nickname was.
+</p></div>
+          </section>
+      </article>
+      <article class="pattern">
+          <h2 class="kss-title" id="1-1">
+            <span class="kss-ref badge pull-right">1-1</span> Direct children of &#x60;.grid&#x60; are columns.
+          </h2>
+          <section class="example">
+<pre class="">&lt;main class=&quot;grid&quot;&gt;
+  &lt;section class=&quot;[modifier class]&quot;&gt;
+    Cell 1
+  &lt;/section&gt;
+  &lt;article class=&quot;grid&quot;&gt;
+    &lt;p class=&quot;grid [modifier class]&quot;&gt;
+      Cell 2.1
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;p&gt;Cell 2.2&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/main&gt;</pre>
+            <div class="kss-example"><main class="grid">
+  <section class="[modifier class]">
+    Cell 1
+  </section>
+  <article class="grid">
+    <p class="grid [modifier class]">
+      Cell 2.1
+    </p>
+    <div>
+      <p>Cell 2.2</p>
+    </div>
+  </article>
+</main></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.column--light</code> <span class="f-right fs-small">Less important column</span></p>
+              <div class="kss-example"><main class="grid">
+  <section class="column--light">
+    Cell 1
+  </section>
+  <article class="grid">
+    <p class="grid column--light">
+      Cell 2.1
+    </p>
+    <div>
+      <p>Cell 2.2</p>
+    </div>
+  </article>
+</main></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.column--heavy</code> <span class="f-right fs-small">More important column</span></p>
+              <div class="kss-example"><main class="grid">
+  <section class="column--heavy">
+    Cell 1
+  </section>
+  <article class="grid">
+    <p class="grid column--heavy">
+      Cell 2.1
+    </p>
+    <div>
+      <p>Cell 2.2</p>
+    </div>
+  </article>
+</main></div>
+          </section>
+      </article>
+      <article class="pattern">
+          <h2 class="kss-title" id="1-2">
+            <span class="kss-ref badge pull-right">1-2</span> Wrappers
+          </h2>
+          <div class="subtitle pattern-description"><p>Use wrappers when you need a content area that is a standardized width and centered on the page.</p>
+</div>
+          <section class="example">
+<pre class="">&lt;div class=&quot;wrapper [modifier class]&quot;&gt;Wrapper&lt;/div&gt;</pre>
+            <div class="kss-example"><div class="wrapper [modifier class]">Wrapper</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.wrapper-small</code> <span class="f-right fs-small">Small Wrapper</span></p>
+              <div class="kss-example"><div class="wrapper wrapper-small">Wrapper</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.wrapper-large</code> <span class="f-right fs-small">Large Wrapper</span></p>
+              <div class="kss-example"><div class="wrapper wrapper-large">Wrapper</div></div>
+          </section>
+      </article>
+</div>
+
+
+
+
+      
+
+    
+  <script src="./public/js/kss.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "source": "src/sass/",
+  "template": "temp/kss",
+  "destination": "docs",
+  "css": "dist/css/winnie.css",
+  "homepage": "../../temp/kss/homepage.md"
+}

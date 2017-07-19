@@ -1,0 +1,16 @@
+{% extends '../templates/default.html' %}
+
+{% block head %}
+  <link href="../dist/css/winnie.css" rel="stylesheet" />
+  <link href="./public/css/kss.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+INJECT_KSS_MARKUP
+
+{% endblock %}
+
+{% block foot %}
+  <script src="./public/js/kss.js"></script>
+{% endblock %}
