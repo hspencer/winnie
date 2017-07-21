@@ -1,6 +1,6 @@
 <div class="wrapper wrapper--large ta-center">
   <h1>Winnie</h1>
-  <p>A SCSS Framework for WIN</p>
+  <p>A SCSS Framework for WIN<br>Check the <a href='https://www.github.com/hspencer/winnie'>repo</a></p>
 </div>
 
 <h2>Typography</h2>
